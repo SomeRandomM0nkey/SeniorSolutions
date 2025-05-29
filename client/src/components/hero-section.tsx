@@ -27,7 +27,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Find the Perfect Care Home for Your Loved One
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
             Connect with trusted senior care facilities that meet your family's unique needs. Professional, compassionate care starts here.
           </p>
         </div>

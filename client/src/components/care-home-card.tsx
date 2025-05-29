@@ -138,7 +138,7 @@ export function CareHomeCard({ careHome, onCompare, isComparing }: CareHomeCardP
               <h3 className="text-xl font-semibold text-gray-900 hover:text-care-blue cursor-pointer">
                 {careHome.name}
               </h3>
-              <p className="text-gray-600 flex items-center mt-1">
+              <p className="text-gray-700 flex items-center mt-1">
                 <MapPin className="mr-1 h-4 w-4" />
                 {careHome.distance} miles away • {careHome.city}
               </p>
@@ -170,7 +170,7 @@ export function CareHomeCard({ careHome, onCompare, isComparing }: CareHomeCardP
             )}
           </div>
 
-          <p className="text-gray-600 mb-4 line-clamp-2">
+          <p className="text-gray-700 mb-4 line-clamp-2">
             {careHome.description}
           </p>
 
@@ -179,8 +179,8 @@ export function CareHomeCard({ careHome, onCompare, isComparing }: CareHomeCardP
               <span className="text-2xl font-bold text-gray-900">
                 ${parseFloat(careHome.startingPrice).toLocaleString()}
               </span>
-              <span className="text-gray-600">/month</span>
-              <p className="text-sm text-gray-500">{careHome.priceDescription}</p>
+              <span className="text-gray-700">/month</span>
+              <p className="text-sm text-gray-600">{careHome.priceDescription}</p>
             </div>
             <div className="flex space-x-3">
               <Button

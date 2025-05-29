@@ -93,7 +93,7 @@ export function FilterSidebar({ filters, onFiltersChange }: FilterSidebarProps) 
                     checked={filters.bedAvailability.includes(status)}
                     onCheckedChange={() => toggleArrayFilter('bedAvailability', status)}
                   />
-                  <Label htmlFor={`availability-${status}`} className="text-sm text-gray-600 flex-1">
+                  <Label htmlFor={`availability-${status}`} className="text-sm text-gray-800 flex-1">
                     {status}
                   </Label>
                   <div className={`w-2 h-2 rounded-full ${getAvailabilityColor(status)}`} />
@@ -155,7 +155,7 @@ export function FilterSidebar({ filters, onFiltersChange }: FilterSidebarProps) 
                     checked={filters.careTypes.includes(type)}
                     onCheckedChange={() => toggleArrayFilter('careTypes', type)}
                   />
-                  <Label htmlFor={`care-${type}`} className="text-sm text-gray-600">
+                  <Label htmlFor={`care-${type}`} className="text-sm text-gray-800">
                     {type}
                   </Label>
                 </div>
@@ -174,7 +174,7 @@ export function FilterSidebar({ filters, onFiltersChange }: FilterSidebarProps) 
                     checked={filters.amenities.includes(amenity)}
                     onCheckedChange={() => toggleArrayFilter('amenities', amenity)}
                   />
-                  <Label htmlFor={`amenity-${amenity}`} className="text-sm text-gray-600">
+                  <Label htmlFor={`amenity-${amenity}`} className="text-sm text-gray-800">
                     {amenity}
                   </Label>
                 </div>
