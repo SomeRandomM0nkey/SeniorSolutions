@@ -193,7 +193,7 @@ export function FilterSidebar({ filters, onFiltersChange }: FilterSidebarProps) 
                     checked={filters.roomTypes.includes(type)}
                     onCheckedChange={() => toggleArrayFilter('roomTypes', type)}
                   />
-                  <Label htmlFor={`room-${type}`} className="text-sm text-gray-600">
+                  <Label htmlFor={`room-${type}`} className="text-sm text-gray-800">
                     {type}
                   </Label>
                 </div>

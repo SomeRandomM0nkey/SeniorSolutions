@@ -159,12 +159,12 @@ export function CareHomeCard({ careHome, onCompare, isComparing }: CareHomeCardP
               </Badge>
             ))}
             {careHome.amenities.slice(0, 2).map((amenity) => (
-              <Badge key={amenity} variant="outline" className="text-gray-600">
+              <Badge key={amenity} variant="outline" className="text-gray-800 border-gray-400">
                 {amenity}
               </Badge>
             ))}
             {careHome.amenities.length > 2 && (
-              <Badge variant="outline" className="text-gray-600">
+              <Badge variant="outline" className="text-gray-800 border-gray-400">
                 +{careHome.amenities.length - 2} more
               </Badge>
             )}
