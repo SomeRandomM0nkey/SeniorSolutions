@@ -15,7 +15,9 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
     const formData = new FormData(e.target as HTMLFormElement);
     const location = formData.get('location') as string || '';
     const careType = formData.get('careType') as string || '';
-    onSearch(location, careType);
+    // Convert "any" back to empty string for the search logic
+    const searchCareType = careType === 'any' ? '' : careType;
+    onSearch(location, searchCareType);
   };
 
   return (
@@ -57,7 +59,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
                     <SelectValue placeholder="Any Care Level" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any Care Level</SelectItem>
+                    <SelectItem value="any">Any Care Level</SelectItem>
                     {CARE_TYPES.map((type) => (
                       <SelectItem key={type} value={type}>
                         {type}
